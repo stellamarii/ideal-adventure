@@ -12,8 +12,7 @@ function App() {
                     school="TLU"
                 />
                 <Maths />
-                <Maths />
-                <Maths />
+
                 {/* <Hello
                     name="Mari"
                     age={2}
