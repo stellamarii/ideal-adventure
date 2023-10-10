@@ -1,18 +1,19 @@
 {
-    "name": "ideal-adventure",
+    "name": "backend",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "frontend": "cd frontend && npm run start",
-        "backend": "cd backend && npm run dev",
-        "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+        "dev": "nodemon index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
     "devDependencies": {
-        "concurrently": "^8.2.1"
+        "nodemon": "^3.0.1"
     }
 }
