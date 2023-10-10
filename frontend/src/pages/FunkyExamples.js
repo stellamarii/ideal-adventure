@@ -14,7 +14,7 @@ function FunkyExamples() {
 
     return (
         <div className="Container">
-            <h1>Raimo</h1>
+            <h1>Stella</h1>
             <Children>
                 <Fetching />
                 <PropDrilling />

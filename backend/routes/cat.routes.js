@@ -5,7 +5,7 @@ const router = express.Router();
 const catsController = require("../controllers/cat.controller");
 
 // middleware that is specific to this router
-router.use((req, res, next) => {
+/* router.use((req, res, next) => {
     const { name } = req.body;
 
     if (name !== "Raimo") throw new Error("Noup");
@@ -22,9 +22,10 @@ router.use((req, res, next) => {
 const getMiddleware = (req, res, next) => {
     console.log("Getting DB result for req.user");
     next();
-};
+}; */
 
-router.get("/", getMiddleware, catsController.read);
+//router.get("/", getMiddleware, catsController.read);
+router.get("/", catsController.read);
 router.post("/:name", catsController.create);
 router.put("/:name", catsController.update);
 router.delete("/:name", catsController.delete);

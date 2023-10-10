@@ -10,6 +10,8 @@ import "./index.css"
 import reportWebVitals from "./reportWebVitals"
 import App from "./App"
 import FunkyExamples from "./pages/FunkyExamples"
+import ToDo from "./pages/ToDo"
+import Cats from "./pages/Cats"
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,6 +25,14 @@ const router = createBrowserRouter(
             <Route
                 path="contact"
                 element={<h1>Contact</h1>}
+            />
+            <Route
+                path="todo"
+                element={<ToDo />}
+            />
+            <Route
+                path="cats"
+                element={<Cats />}
             />
         </Route>
     )

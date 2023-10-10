@@ -33,6 +33,14 @@ const links = [
     {
         title: "Contact",
         href: "/contact"
+    },
+    {
+        title: "ToDo",
+        href: "/todo"
+    },
+    {
+        title: "Cats",
+        href: "/cats"
     }
 ]
 

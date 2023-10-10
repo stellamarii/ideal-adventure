@@ -1,22 +1,24 @@
-const express = require('express')
+const express = require("express")
+var cors = require("cors")
 const app = express()
 const port = 8080
 const catsRoutes = require("./routes/cat.routes")
 const todoRoutes = require("./routes/todo.routes")
 
 app.use(express.json())
+app.use(cors())
 
 app.use("/cats", catsRoutes)
 app.use("/todo", todoRoutes)
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+app.get("/", (req, res) => {
+    res.send("Hello World!")
 })
 
 app.get("/flights/:from-:to", (req, res) => {
     res.send({
         params: req.params,
-        body: req.body,
+        body: req.body
     })
 })
 
